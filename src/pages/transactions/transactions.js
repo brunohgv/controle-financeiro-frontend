@@ -63,7 +63,7 @@ export default class Transactions extends Component {
         date: new Date()
     })
     const updatedList = this.state.transactions
-    updatedList.push(transaction.data)
+    updatedList.unshift(transaction.data)
     this.setState({
       transactions: updatedList
     })
